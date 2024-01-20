@@ -1,0 +1,26 @@
+type: CoreBlock
+localizedName: "Core"
+details: "1 variant. Based on core Shard."
+category: effect
+health: 1700
+size: 3
+
+itemCapacity: 3410
+unitCapModifier: 10
+unitType: "alpha"
+incinerateNonBuildable: true
+isFirstTier: true
+squareSprite: false
+
+requirements: [
+    "iron/1230"
+	"speciallead/1350"
+]
+
+research: {
+    root: true
+    name: Arterian
+	planet: rt
+}
+
+alwaysUnlocked: true

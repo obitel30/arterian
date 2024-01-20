@@ -1,0 +1,17 @@
+{
+  "name": "Bauxite",
+  "description": "The aluminum ore."
+  "explosiveness": 0,
+  "flammability": 0,
+  "radioactivity": 0,
+  "color": "F9B41F",
+  "cost": 1.2,
+  "hiddenOnPlanets": [
+    "serpulo",
+    "erekir"
+  ],
+  "hardness": 2
+  "research": {
+    "parent": "iron"
+}
+}

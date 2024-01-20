@@ -1,0 +1,17 @@
+{
+  "name": "Lead",
+  "description": "Some changed lead from Arterian."
+  "explosiveness": 0,
+  "flammability": 0,
+  "radioactivity": 0,
+  "color": "778396",
+  "cost": 1.7,
+  "hiddenOnPlanets": [
+    "serpulo",
+    "erekir"
+  ],
+  "hardness": 1
+  "research": {
+    "parent": "iron"
+}
+}

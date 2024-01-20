@@ -1,0 +1,76 @@
+generator: SerpuloPlanetGenerator
+localizedName: "Arterian"
+parent: art
+iconColor: 439df1ff
+solarSystem: art
+orbitRadius: 23
+hasAtmosphere: false,
+updateLighting: false,
+atmosphereRadIn: 0.1,
+atmosphereRadOut: 0.3,
+atmosphereColor: 0090ff,
+icon: command-rally,
+drawOrbit: true,
+
+accessible: true
+alwaysUnlocked: true
+defaultCore: "core-nucleus"
+sectorSeed: 0
+startSector: 3
+sectorSize: 1
+
+clearSectorOnLose: true
+allowSectorInvasion: false
+allowLaunchToNumbered: false
+	
+cloudMesh: {
+  type: HexSkyMesh
+  planet: arter
+  seed: 2
+  speed: 3
+  radius: 0.05
+  divisions: 5
+  color: 57b3fa
+  octaves: 10
+  persistence: 1
+  scl: 2
+  thresh: 0.45
+}
+
+mesh: {
+    type: NoiseMesh
+    planet: arter
+    seed: 562697
+    color1: D8E8EC
+    color2: D8E8EC
+    divisions: 5
+    radius: 0.9
+    octaves: 12
+    persistence: 1
+    scl: 0.75
+    mag: 1.2
+}
+	
+hiddenItems: [
+    "copper"
+    "lead"
+    "scrap"
+    "graphite"
+    "coal"
+    "titanium"
+    "thorium"
+    "silicon"
+    "plastanium"
+    "phase-fabric"
+    "surge-alloy"
+    "spore-pod"
+    "blast-compound"
+    "pyratite"
+    "metaglass"
+    "beryllium"
+    "oxide"
+    "tungsten"
+    "carbide"
+    "fissile-matter"
+    "dormant-cyst"
+]

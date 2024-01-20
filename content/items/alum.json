@@ -1,0 +1,17 @@
+{
+  "name": "Aluminum",
+  "description": "Made from bauxits."
+  "explosiveness": 0,
+  "flammability": 0,
+  "radioactivity": 0,
+  "color": "43464B",
+  "cost": 1.2,
+  "hiddenOnPlanets": [
+    "serpulo",
+    "erekir"
+  ],
+  "hardness": 2
+  "research": {
+    "parent": "boxi"
+}
+}

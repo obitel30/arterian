@@ -1,0 +1,62 @@
+type: ItemTurret 
+name: Rackiter
+description: Fires missiles at high speeds.
+reload: 140
+shootCone: 0.1
+rotateSpeed: 2
+heatColor: ff7f31
+size: 2
+range: 1030
+health: 3170
+inaccuracy: 0
+shootSound: explosion
+outlineIcon: false
+maxAmmo: 20
+targetInterval: 21.7
+cooldownTime: 20
+shoot: {
+    type: ShootPattern
+    shots: 3,
+    shotDelay: 1
+}
+ammoTypes: {
+  iron: {
+    type: MissleBulletType 
+    damage: 9
+    splashDamageRadius: 7
+    splashDamage: 2
+    ammoMultiplier: 1
+    reloadMultiplier: 1.2
+    shootEffect: shootSmall 
+    speed: 30
+    lifetime: 45
+    pierce: false
+    width: 4
+    ammoUseEffect: none
+    length: 17
+    sprite: missile
+    
+   
+  }
+    speciallead: {
+    type: MissleBulletType
+    damage: 11
+    homingPower: 17
+    homingRange: 70
+    shootEffect: shootSmall
+    lifetime: 62
+    speed: 17
+    width: 4
+    length: 21
+    ammoUseEffect: casing2
+    sprite: missile
+  }
+}
+requirements: [
+  iron/15
+  speciallead/45
+
+
+]
+research: 1tc
+category: turret 

@@ -1,0 +1,143 @@
+# The planet's display name. If you want to support multiple languages, use bundles instead!
+localizedName: ARTE-5
+
+# The mesh of the planet. At least MultiMesh is supported, so you can put multiple
+# NoiseMesh'es to your planet!
+mesh: {
+  # Mesh type. Self-explanatory.
+  type: NoiseMesh
+  # A number used for mesh generation.
+  seed: 69
+  # Mesh "quality". More divisions = more hexagons.
+  divisions: 4
+  # First color to be used.
+  color1: a2a2c2
+  # Second color to be used.
+  color2: 22262b
+  # Mesh radius.
+  radius: 0.8
+  # A noise property.
+  octaves: 3
+  # A noise property.
+  persistence: 0.8
+  # Noise scale.
+  scale: 1
+  # A noise property.
+  mag: 1.5
+}
+
+
+cloudMesh: {
+
+  type: HexSkyMesh
+
+  seed: 96
+
+  speed: 0.4
+
+  radius: 0.05
+
+  divisions: 4
+
+  color: 4662e87e
+
+  octaves: 3
+
+  persistence: 0.7
+
+  scl: 1
+
+  thresh: 0.4
+}
+
+
+generator: {
+ 
+  min: 2
+
+  max: 5
+
+
+  octaves: 2
+  persistence: 0.4
+  scale: 30
+  mag: 0.4
+  thresh: 1
+  foct: 3
+  fmag: 0.5
+  fscl: 50
+  fper: 0.6
+
+
+  radMin: 600
+  radMax: 600
+
+
+  stoneChance: 0
+
+ 
+  iceChance: 0.5
+  carbonChance: 1
+  berylChance: 0
+  ferricChance: 0
+}
+
+
+alwaysUnlocked: true
+
+sectorSize: 1
+
+orbitSpacing: 12
+
+radius: 1
+
+minZoom: 0.5
+
+drawOrbit: true
+
+atmosphereRadIn: 0
+atmosphereRadOut: 0.3
+
+accessible: true
+
+updateLighting: true
+
+sectorSeed: 529
+
+bloom: false
+
+visible: true
+
+atmosphereColor: D8E8EC
+
+iconColor: D8E8EC
+
+hasAtmosphere: false
+
+allowWaveSimulation: true
+
+allowLaunchToNumbered: true
+
+clearSectorOnLose: true
+
+allowWaves: true
+# Icon's name displayed in top-left dialog.
+icon: command-rally
+# Default core block for launch loadouts.
+defaultCore: core-nucleus
+# The parent of the planet.
+parent: art
+# The parent of the whole solar system the planet is in. Affects lighting.
+solarSystem: art
+# Possible planets that could be landed on from this planet.
+# In the current version, only 1 entry is applicable if you decide to use modded accelerators.
+# Probably useless since the Interplanetary Accelerator is hidden and not working.
+launchCandidates: []
+# Items not available in this planet. Commented out because itemWhitelist is used instead as seen below.
+#hiddenItems: [
+#  graphite, plastanium, phase-fabric
+#]
+# Only items available in this planet. Recommended over hiddenItems.
+itemWhitelist: [
+  copper, lead, beryllium, graphite, titanium
+]

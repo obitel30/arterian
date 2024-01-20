@@ -1,0 +1,20 @@
+{
+  "name": "PD-I",
+  "localizedName": "PD-I",
+  "description": "Reworked Pneumatic Drill, has a lowered power because of using iron and lead."
+  "type": "Drill",
+  "health": 305,
+  "size": 2,
+  "tier": 1,
+  "drillTime": 645,
+  "requirements": [
+    "speciallead/1"
+  ],
+  "category": "production",
+  "research": {
+    "parent": "router"
+    "requirements": [
+        "speciallead/2"
+ ]
+}
+}

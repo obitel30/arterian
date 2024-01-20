@@ -1,0 +1,47 @@
+type: GenericCrafter
+category: crafting
+size: 2
+health: 780
+itemCapacity: 140
+name: "Bauxite Crusher"
+
+
+craftTime: 45
+consumes: {
+   
+    items: [
+        "boxi/3"
+	    
+	]
+}
+outputItem: "alum/1"
+
+requirements: [
+    "iron/65"
+    "speciallead/75"
+]
+
+research: {
+    parent: "router"
+    requirements: [
+        "iron/345"
+		"speciallead/455"
+    ]
+	objectives: [
+	    "speciallead"
+		"iron"
+		"id"
+	]
+}
+drawer: [
+	{
+        type: DrawRegion
+        suffix: "-bottom"
+    }
+	{
+		type: DrawArcSmelt
+	}
+	{
+        type: DrawDefault
+    }
+]

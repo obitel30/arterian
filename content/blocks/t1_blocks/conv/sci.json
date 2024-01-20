@@ -1,0 +1,26 @@
+{
+
+    "type": "StackConveyor",
+    "name": "Iron conveyor"
+    "description": "Remaked basic conveyor, now its stack conveyor.",
+     "details": "idk",
+
+    "category": "distribution",
+    "health": 90,
+    "speed": 0.15,
+    "displayedSpeed": 7,
+
+    "requirements": [
+        {"item": "iron", "amount": 1},
+        {"item": "speciallead", "amount": 1}
+        
+    ],
+    "research": {
+      "parent": "speciallead"
+      "requirements": [
+      {"item": "iron", "amount": 12},
+      {"item": "speciallead", "amount": 6},
+      
+      ]
+  }
+}
